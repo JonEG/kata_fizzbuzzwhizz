@@ -3,6 +3,6 @@ class FizzBuzzWhizz {
     if (number % 3 == 0) {
       return "Fizz";
     }
-    return "";
+    return number.toString();
   }
 }
