@@ -1,8 +1,13 @@
 class FizzBuzzWhizz {
   static String getStringTranslation(int number) {
-    if (number % 3 == 0) {
+    bool isDivisibleByThree = number % 3 == 0;
+    bool isDivisibleByFive = number % 5 == 0;
+
+    if (isDivisibleByThree && isDivisibleByFive) {
+      return "FizzBuzz";
+    } else if (isDivisibleByThree) {
       return "Fizz";
-    } else if (number % 5 == 0) {
+    } else if (isDivisibleByFive) {
       return "Buzz";
     }
     return number.toString();
