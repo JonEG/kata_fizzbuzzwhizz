@@ -18,6 +18,22 @@ void main() {
     translation = FizzBuzzWhizz.getStringTranslation(-3 * 12345);
     expect(translation, "Fizz");
   });
+  test('Given a number, when divisible by 5, then return "Buzz"', () {
+    String translation;
+
+    // Test implementation
+    translation = FizzBuzzWhizz.getStringTranslation(0);
+    expect(translation, "Buzz");
+
+    translation = FizzBuzzWhizz.getStringTranslation(5);
+    expect(translation, "Buzz");
+
+    translation = FizzBuzzWhizz.getStringTranslation(5 * 12345);
+    expect(translation, "Buzz");
+
+    translation = FizzBuzzWhizz.getStringTranslation(-5 * 12345);
+    expect(translation, "Buzz");
+  });
 
   test(
       'Given a number, when no divisible by our divisors, then return the number as a string',
