@@ -8,4 +8,12 @@ void main() {
 
     expect(translation, "Fizz");
   });
+  test(
+      'Given a number, when no divisible by our divisors, then return the number as a string',
+      () {
+    // Test implementation
+    String translation = FizzBuzzWhizz.getStringTranslation(1);
+
+    expect(translation, "1");
+  });
 }
