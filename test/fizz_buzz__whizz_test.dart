@@ -40,6 +40,14 @@ void main() {
       translation = FizzBuzzWhizz.getStringTranslation(3 * 7);
       expect(translation, "FizzWhizz");
     });
+    test('Given a number, when divisible by 5 and 7, then return "BuzzWhizz"',
+        () {
+      String translation;
+
+      // Test implementation
+      translation = FizzBuzzWhizz.getStringTranslation(5 * 7);
+      expect(translation, "BuzzWhizz");
+    });
     test(
         'Given a number, when divisible by 3, 5 and 7, then return "FizzBuzzWhizz"',
         () {
