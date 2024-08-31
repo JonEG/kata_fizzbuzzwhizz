@@ -6,6 +6,8 @@ class FizzBuzzWhizz {
 
     if (isDivisibleByThree && isDivisibleByFive && isDivisibleBySeven) {
       return "FizzBuzzWhizz";
+    } else if (isDivisibleByFive && isDivisibleBySeven) {
+      return "BuzzWhizz";
     } else if (isDivisibleByThree && isDivisibleBySeven) {
       return "FizzWhizz";
     } else if (isDivisibleBySeven) {
