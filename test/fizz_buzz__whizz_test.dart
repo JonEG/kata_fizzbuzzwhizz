@@ -39,6 +39,16 @@ void main() {
     expect(translation, "FizzBuzz");
   });
   test(
+      'Given a number, when divisible by 3, 5 and 7, then return "FizzBuzzWhizz"',
+      () {
+    String translation;
+
+    // Test implementation
+    translation = FizzBuzzWhizz.getStringTranslation(0);
+    expect(translation, "FizzBuzzWhizz");
+  });
+
+  test(
       'Given a number, when no divisible by our divisors, then return the number as a string',
       () {
     // Test implementation
