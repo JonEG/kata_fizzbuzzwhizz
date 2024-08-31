@@ -56,6 +56,9 @@ void main() {
       // Test implementation
       translation = FizzBuzzWhizz.getStringTranslation(0);
       expect(translation, "FizzBuzzWhizz");
+
+      translation = FizzBuzzWhizz.getStringTranslation(3 * 5 * 7);
+      expect(translation, "FizzBuzzWhizz");
     });
 
     test(
