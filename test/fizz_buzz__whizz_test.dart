@@ -27,14 +27,6 @@ void main() {
     String translation;
 
     // Test implementation
-    /**
-     * This value is giving us problems because it is dividible by our
-     * three divisors 3, 5 and 7
-     * 
-     * translation = FizzBuzzWhizz.getStringTranslation(0);
-     * expect(translation, "FizzBuzz");
-     */
-
     translation = FizzBuzzWhizz.getStringTranslation(3 * 5);
     expect(translation, "FizzBuzz");
   });
