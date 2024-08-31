@@ -4,7 +4,9 @@ class FizzBuzzWhizz {
     bool isDivisibleByFive = number % 5 == 0;
     bool isDivisibleBySeven = number % 7 == 0;
 
-    if (isDivisibleBySeven) {
+    if (isDivisibleByThree && isDivisibleByFive && isDivisibleBySeven) {
+      return "FizzBuzzWhizz";
+    } else if (isDivisibleBySeven) {
       return "Whizz";
     } else if (isDivisibleByThree && isDivisibleByFive) {
       return "FizzBuzz";
