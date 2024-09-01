@@ -95,5 +95,18 @@ void main() {
 
       expect(translation, "Buzz");
     });
+    test(
+        'Given three divisors, when divisible by third one, then return "Whizz"',
+        () {
+      // Test implementation
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        2,
+        firstDivisor: 5,
+        secondDivisor: 7,
+        thirdDivisor: 2,
+      );
+
+      expect(translation, "Whizz");
+    });
   });
 }
