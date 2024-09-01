@@ -6,22 +6,24 @@ class FizzBuzzWhizz {
     int thirdDivisor = 7,
   }) {
     bool isDivisibleByFirstDivisor = number % firstDivisor == 0;
-    bool isDivisibleByFive = number % 5 == 0;
+    bool isDivisibleBySecondDivisor = number % secondDivisor == 0;
     bool isDivisibleBySeven = number % 7 == 0;
 
-    if (isDivisibleByFirstDivisor && isDivisibleByFive && isDivisibleBySeven) {
+    if (isDivisibleByFirstDivisor &&
+        isDivisibleBySecondDivisor &&
+        isDivisibleBySeven) {
       return "FizzBuzzWhizz";
-    } else if (isDivisibleByFive && isDivisibleBySeven) {
+    } else if (isDivisibleBySecondDivisor && isDivisibleBySeven) {
       return "BuzzWhizz";
     } else if (isDivisibleByFirstDivisor && isDivisibleBySeven) {
       return "FizzWhizz";
     } else if (isDivisibleBySeven) {
       return "Whizz";
-    } else if (isDivisibleByFirstDivisor && isDivisibleByFive) {
+    } else if (isDivisibleByFirstDivisor && isDivisibleBySecondDivisor) {
       return "FizzBuzz";
     } else if (isDivisibleByFirstDivisor) {
       return "Fizz";
-    } else if (isDivisibleByFive) {
+    } else if (isDivisibleBySecondDivisor) {
       return "Buzz";
     }
     return number.toString();
