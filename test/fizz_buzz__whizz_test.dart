@@ -108,5 +108,57 @@ void main() {
 
       expect(translation, "Whizz");
     });
+    test(
+        'Given three divisors, when divisible by the first and second, then return "FizzBuzz"',
+        () {
+      // Test implementation
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        4,
+        firstDivisor: 2,
+        secondDivisor: 4,
+        thirdDivisor: 6,
+      );
+
+      expect(translation, "FizzBuzz");
+    });
+    test(
+        'Given three divisors, when divisible by the first and third, then return "FizzWhizz"',
+        () {
+      // Test implementation
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        4,
+        firstDivisor: 2,
+        secondDivisor: 6,
+        thirdDivisor: 4,
+      );
+
+      expect(translation, "FizzWhizz");
+    });
+    test(
+        'Given three divisors, when divisible by the second and third, then return "BuzzWhizz"',
+        () {
+      // Test implementation
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        4,
+        firstDivisor: 6,
+        secondDivisor: 2,
+        thirdDivisor: 4,
+      );
+
+      expect(translation, "BuzzWhizz");
+    });
+    test(
+        'Given three divisors, when divisible by the three of them, then return "FizzBuzzWhizz"',
+        () {
+      // Test implementation
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        6,
+        firstDivisor: 6,
+        secondDivisor: 2,
+        thirdDivisor: 4,
+      );
+
+      expect(translation, "FizzBuzzWhizz");
+    });
   });
 }
