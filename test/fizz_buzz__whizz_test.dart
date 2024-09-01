@@ -160,5 +160,38 @@ void main() {
 
       expect(translation, "FizzBuzzWhizz");
     });
+    test(
+        'Given three divisors, when any divisor is 0, then return "0 is an invalid divisor"',
+        () {
+      String translation;
+      // Test implementation
+      translation = FizzBuzzWhizz.getStringTranslation(
+        6,
+        firstDivisor: 0,
+        secondDivisor: 2,
+        thirdDivisor: 3,
+      );
+
+      expect(translation, "0 is an invalid divisor");
+
+      // Test implementation
+      translation = FizzBuzzWhizz.getStringTranslation(
+        6,
+        firstDivisor: 2,
+        secondDivisor: 0,
+        thirdDivisor: 3,
+      );
+
+      expect(translation, "0 is an invalid divisor");
+      // Test implementation
+      translation = FizzBuzzWhizz.getStringTranslation(
+        6,
+        firstDivisor: 2,
+        secondDivisor: 3,
+        thirdDivisor: 0,
+      );
+
+      expect(translation, "0 is an invalid divisor");
+    });
   });
 }
