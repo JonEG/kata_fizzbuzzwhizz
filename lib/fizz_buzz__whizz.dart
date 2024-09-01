@@ -5,21 +5,21 @@ class FizzBuzzWhizz {
     secondDivisor = 5,
     thirdDivisor = 7,
   }) {
-    bool isDivisibleByThree = number % 3 == 0;
+    bool isDivisibleByFirstDivisor = number % firstDivisor == 0;
     bool isDivisibleByFive = number % 5 == 0;
     bool isDivisibleBySeven = number % 7 == 0;
 
-    if (isDivisibleByThree && isDivisibleByFive && isDivisibleBySeven) {
+    if (isDivisibleByFirstDivisor && isDivisibleByFive && isDivisibleBySeven) {
       return "FizzBuzzWhizz";
     } else if (isDivisibleByFive && isDivisibleBySeven) {
       return "BuzzWhizz";
-    } else if (isDivisibleByThree && isDivisibleBySeven) {
+    } else if (isDivisibleByFirstDivisor && isDivisibleBySeven) {
       return "FizzWhizz";
     } else if (isDivisibleBySeven) {
       return "Whizz";
-    } else if (isDivisibleByThree && isDivisibleByFive) {
+    } else if (isDivisibleByFirstDivisor && isDivisibleByFive) {
       return "FizzBuzz";
-    } else if (isDivisibleByThree) {
+    } else if (isDivisibleByFirstDivisor) {
       return "Fizz";
     } else if (isDivisibleByFive) {
       return "Buzz";
