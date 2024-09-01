@@ -5,9 +5,18 @@ class FizzBuzzWhizz {
     int secondDivisor = 5,
     int thirdDivisor = 7,
   }) {
-    bool isDivisibleByFirstDivisor = number % firstDivisor == 0;
-    bool isDivisibleBySecondDivisor = number % secondDivisor == 0;
-    bool isDivisibleByThirdDivisor = number % thirdDivisor == 0;
+    bool isDivisibleByFirstDivisor = false,
+        isDivisibleBySecondDivisor = false,
+        isDivisibleByThirdDivisor = false;
+
+    try {
+      isDivisibleByFirstDivisor = number % firstDivisor == 0;
+      isDivisibleBySecondDivisor = number % secondDivisor == 0;
+      isDivisibleByThirdDivisor = number % thirdDivisor == 0;
+    } catch (e) {
+      //this is the only integer that could trigger an exception
+      return "0 is an invalid divisor";
+    }
 
     if (isDivisibleByFirstDivisor &&
         isDivisibleBySecondDivisor &&
