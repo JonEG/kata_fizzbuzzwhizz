@@ -73,8 +73,12 @@ void main() {
         'Given three divisors, when divisible by first one, then return "Fizz"',
         () {
       // Test implementation
-      String translation =
-          FizzBuzzWhizz.getStringTranslation(2, firstDivisor: 2);
+      String translation = FizzBuzzWhizz.getStringTranslation(
+        2,
+        firstDivisor: 2,
+        secondDivisor: 5,
+        thirdDivisor: 7,
+      );
 
       expect(translation, "Fizz");
     });
