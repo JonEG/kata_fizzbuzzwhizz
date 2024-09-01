@@ -155,7 +155,7 @@ void main() {
         6,
         firstDivisor: 6,
         secondDivisor: 2,
-        thirdDivisor: 4,
+        thirdDivisor: 3,
       );
 
       expect(translation, "FizzBuzzWhizz");
