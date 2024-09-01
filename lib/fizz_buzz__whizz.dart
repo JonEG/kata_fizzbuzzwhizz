@@ -1,5 +1,10 @@
 class FizzBuzzWhizz {
-  static String getStringTranslation(int number) {
+  static String getStringTranslation(
+    int number, {
+    firstDivisor = 3,
+    secondDivisor = 5,
+    thirdDivisor = 7,
+  }) {
     bool isDivisibleByThree = number % 3 == 0;
     bool isDivisibleByFive = number % 5 == 0;
     bool isDivisibleBySeven = number % 7 == 0;

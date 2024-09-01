@@ -69,5 +69,14 @@ void main() {
 
       expect(translation, "1");
     });
+    test(
+        'Given three divisors, when divisible by first one, then return "Fizz"',
+        () {
+      // Test implementation
+      String translation =
+          FizzBuzzWhizz.getStringTranslation(2, firstDivisor: 2);
+
+      expect(translation, "Fizz");
+    });
   });
 }
