@@ -35,3 +35,8 @@ Create a function `fizz_buzz_whizz` that takes a single integer input, `n`, and 
 4. **Write the next failing test**: Add another test for a new case, like `fizz_buzz_whizz(5)` returning `"Buzz"`.
 5. **Repeat the cycle**: Continue until all the rules are implemented and all tests pass.
 
+
+## Deploy web
+```bash
+#run command
+make deploy-web
