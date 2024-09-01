@@ -7,17 +7,17 @@ class FizzBuzzWhizz {
   }) {
     bool isDivisibleByFirstDivisor = number % firstDivisor == 0;
     bool isDivisibleBySecondDivisor = number % secondDivisor == 0;
-    bool isDivisibleBySeven = number % 7 == 0;
+    bool isDivisibleByThirdDivisor = number % thirdDivisor == 0;
 
     if (isDivisibleByFirstDivisor &&
         isDivisibleBySecondDivisor &&
-        isDivisibleBySeven) {
+        isDivisibleByThirdDivisor) {
       return "FizzBuzzWhizz";
-    } else if (isDivisibleBySecondDivisor && isDivisibleBySeven) {
+    } else if (isDivisibleBySecondDivisor && isDivisibleByThirdDivisor) {
       return "BuzzWhizz";
-    } else if (isDivisibleByFirstDivisor && isDivisibleBySeven) {
+    } else if (isDivisibleByFirstDivisor && isDivisibleByThirdDivisor) {
       return "FizzWhizz";
-    } else if (isDivisibleBySeven) {
+    } else if (isDivisibleByThirdDivisor) {
       return "Whizz";
     } else if (isDivisibleByFirstDivisor && isDivisibleBySecondDivisor) {
       return "FizzBuzz";
